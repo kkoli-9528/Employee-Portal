@@ -7,12 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class signUp {
-
-  private final UserRepository repository;
-
-  signUp(UserRepository repository){
-    this.repository = repository;
-  }
   
   @PostMapping("/signUp")
   public ResponseEntity<String> createUser(@RequestBody User user){

@@ -1,14 +1,7 @@
 package com.example.signUp;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-
-@Entity
 public class User {
 
-  private @Id
-  @GeneratedValue Long id;
   private String email;
   private String password;
 
@@ -18,10 +11,6 @@ public class User {
 
     this.email = email;
     this.password = password;
-  }
-
-  public Long getId(){
-    return this.id;
   }
 
   public String getUserEmail(){
