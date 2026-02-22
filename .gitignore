@@ -1,0 +1,47 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.versions
+pom.xml.bak
+pom.xml.releaseBackup
+dependency-reduced-pom.xml
+build/ 
+
+# Gradle
+.gradle
+*/.gradle
+.gradletasknamecache
+out/
+
+# IDE specific files
+.idea/
+.metadata
+.classpath
+.project
+.settings/
+*.iml
+*.ipr
+*.iws
+.sts4-cache/
+.vscode/
+
+# Compiled files and packaged applications
+*.class
+*.jar
+*.war
+*.ear
+
+# Log files
+logs/
+*.log
+*.log.gz
+*.log-*.gz
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Sensitive files (e.g., environment variables, if not managed via a secrets manager)
+.env
+application.properties
+application.yml
