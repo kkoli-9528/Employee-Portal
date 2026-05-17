@@ -11,9 +11,6 @@ public class SignUp {
   
   @PostMapping("/signUp")
   public ResponseEntity<String> createUser(@RequestBody User user){
-    
-    System.out.println("Username: " + user.getUserEmail().trim());
-    System.out.println("Password: " + user.getUserPassword().trim());
 
     if (user.getUserEmail().trim().isEmpty()) {
       return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Resourse not found");
